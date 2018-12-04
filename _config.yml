@@ -56,7 +56,7 @@ highlight:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 12
+  per_page: 15
   order_by: -date
   
 # Category & Tag
@@ -131,7 +131,7 @@ search:
   limit: 10000
 
 leancloud_counter_security:
-  enable_sync: true
+  enable_sync: false
   app_id: YWoGmJBtL0H01NObzadIB8dd-gzGzoHsz #<app_id>
   app_key: NhB5UIfHaVr6nBpuiRAz3t1E #<app_key>
   username:  xq773939719 # Will be asked while deploying if is left blank
