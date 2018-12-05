@@ -12,4 +12,5 @@ description:
 passwords: 
 author: XQ
 img: 
+mathjax: false
 ---
