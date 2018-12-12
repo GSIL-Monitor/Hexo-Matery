@@ -135,7 +135,7 @@ leancloud_counter_security:
   app_id: YWoGmJBtL0H01NObzadIB8dd-gzGzoHsz #<app_id>
   app_key: NhB5UIfHaVr6nBpuiRAz3t1E #<app_key>
   username:  xq773939719 # Will be asked while deploying if is left blank
-  password:  Xq19920909Xq! # Recommmended to be left blank. Will be asked while deploying if is left blank
+  password:   # Recommmended to be left blank. Will be asked while deploying if is left blank
 
 
 # hexo sitemap
