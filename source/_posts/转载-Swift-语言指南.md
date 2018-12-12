@@ -1,7 +1,7 @@
 ---
 title: '[转载]Swift语言指南'
 categories: [语言]
-tags: [Swift,iOS,macOs]
+tags: [Swift,iOS,macOS]
 copyright: true
 comments: true
 top: false
