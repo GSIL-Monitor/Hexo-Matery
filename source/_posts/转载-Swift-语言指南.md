@@ -15,6 +15,8 @@ author: XQ
 
 # [转载]Swift 语言指南
 
+
+
 发表于 2015-05-01   |   分类于 [Swift](https://qunwang6.github.io/blog/categories/Swift/)
 
 这份指南汇集了 Swift 语言主流学习资源，并以开发者的视角整理编排。
@@ -25,7 +27,43 @@ GitHub：[ipader/SwiftGuide](https://github.com/ipader/SwiftGuide) ｜ 网站：
 
 [@SwiftLanguage](http://weibo.com/swiftlanguage) 更新于 2015-4-26，更新内容详见[《2015-4-26 收录周报》](https://github.com/ipader/SwiftGuide/blob/master/weekly/2015-04-26.md)
 
+## 目录
 
+- Swift 文档
+  - [Welcome to Swift](https://github.com/orjuly/swift-guide#welcome)
+  - [Swift Programming Language（中译）](https://github.com/orjuly/swift-guide#spl)
+  - [Using Swift with Cocoa and Objective-C（中译）](https://github.com/orjuly/swift-guide#using_swift)
+  - [App Extension Programming Guide（中译）](https://github.com/orjuly/swift-guide#extension_guide)
+  - [HomeKit Developer Guide（中译）](https://github.com/orjuly/swift-guide#swift_homekit)
+  - [Swift Blog - Apple Developer（中译）](https://github.com/orjuly/swift-guide#swift_blog)
+  - [iOS Human Interface Guidelines（中译）](https://github.com/orjuly/swift-guide#ios_ui_guide)
+- Swift 教程
+  - [官方教程](https://github.com/orjuly/swift-guide#apple_courses)
+  - [快速入门](https://github.com/orjuly/swift-guide#getting_started)
+  - [教程精选](https://github.com/orjuly/swift-guide#featured_courses)
+  - [开发技巧](https://github.com/orjuly/swift-guide#dev_skill)
+  - [相关文档](https://github.com/orjuly/swift-guide#related_doc)
+- Swift 项目
+  - [类库](https://github.com/orjuly/swift-guide#open_api)
+  - [示例项目](https://github.com/orjuly/swift-guide#examples)
+  - [完整项目](https://github.com/orjuly/swift-guide#projects)
+  - [项目评测](https://github.com/orjuly/swift-guide#project_reviews)
+- [Swift 网站](https://github.com/orjuly/swift-guide#recomm_sites)
+- [相关工具](https://github.com/orjuly/swift-guide#tools)
+- 开放平台
+  - [文档](https://github.com/orjuly/swift-guide#open_doc)
+  - [示例项目](https://github.com/orjuly/swift-guide#open_examples)
+  - [实用资源](https://github.com/orjuly/swift-guide#open_utilities)
+- Apple Watch 指南
+  - 文档
+    - [WatchKit Programming Guide（中译）](https://github.com/orjuly/swift-guide#watchkit_guide)
+    - [Apple Watch Human Interface Guidelines（中译）](https://github.com/orjuly/swift-guide#watch_ui_guide)
+  - Watch 教程
+    - [快速入门](https://github.com/orjuly/swift-guide#watch_getting_started)
+    - [教程精选](https://github.com/orjuly/swift-guide#watch_courses_featured)
+  - [Watch 项目](https://github.com/orjuly/swift-guide#watch_projects)
+  - [媒体文章](https://github.com/orjuly/swift-guide#watch_news)
+- [其它相关](https://github.com/orjuly/swift-guide#related_others)
 
 ## Swift 文档
 
