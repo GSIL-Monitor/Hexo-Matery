@@ -88,7 +88,7 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 #theme: mynext
-theme: jekyll-theme-hacker
+theme: hexo-theme-matery
 
 
 
@@ -102,6 +102,7 @@ deploy:
   repo:
     github: git@github.com:xq773939719/xq773939719.github.io.git,master
     coding: git@git.dev.tencent.com:xq773939719/xq773939719.coding.me.git,master
+    #vultr: git@202.182.116.253:/home/git/hexo.git,master
   #branch: master
 
 #自定义
