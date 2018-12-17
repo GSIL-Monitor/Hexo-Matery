@@ -32,7 +32,7 @@ skip_render:
   - googlee963e7141f7167b9.html
   - baidu_verify_WtabesC0ZP.html
   - baidu_verify_zNI1nJ1upR.html
-
+  #- .gitlab-ci.yml
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -102,7 +102,7 @@ deploy:
   repo:
     github: git@github.com:xq773939719/xq773939719.github.io.git,master
     coding: git@git.dev.tencent.com:xq773939719/xq773939719.coding.me.git,master
-    gitlab: git@gitlab.com:xq773939719/xq773939719.gitlab.io.git,master
+    #gitlab: git@gitlab.com:xq773939719/xq773939719.gitlab.io.git,master
     bitbucket: git@bitbucket.org:xq773939719/xq773939719.bitbucket.io.git,master
     #vultr: git@202.182.116.253:/home/git/hexo.git,master
   #branch: master
