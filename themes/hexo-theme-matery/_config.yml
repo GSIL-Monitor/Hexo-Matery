@@ -1,0 +1,420 @@
+# main menu navigation url and icon
+# 配置菜单导航的名称、路径和图标icon.
+menu:
+  主页:
+    url: /
+    icon: fa-home
+  标签:
+    url: /tags
+    icon: fa-tags
+  类别:
+    url: /categories
+    icon: fa-bookmark
+  日志:
+    url: /archives
+    icon: fa-archive
+  其他:
+    url: /picture
+    icon: fa-image
+  收藏:
+    url: /collection
+    icon: fa-slack
+  友链:
+    url: /friend
+    icon: fa-address-book
+  #友链:
+     #url: /friends
+     #icon: fa-address-book
+
+  关于:
+    url: /about
+    icon: fa-user-circle-o
+
+# index page dream text,
+# 配置首页显示"梦想"的语句.
+dream:
+  enable: true
+  text: 如果一个想法在一开始不是荒谬的，那它就是没有希望的。 ——爱因斯坦
+  #The best preparation for tomorrow is doing your best today.
+####################################
+
+
+
+
+
+#####################################
+# Whether to display the title of the recommended posts
+# 是否显示推荐文章的标题
+recommend:
+  showTitle: true
+
+# Configure website favicon and LOGO
+# 配置网站favicon和网站LOGO
+favicon: /favicon.png
+logo: /medias/Logo-W.png
+
+# The configuration of the second button in the home banner,
+# including the display name of the button, the font awesome icon, and the hyperlink to the button.
+# 首页 banner 中的第二个按钮的配置，包括按钮的显示名称、font awesome图标和按钮的超链接.
+indexbtn:
+  enable: true
+  name: Github
+  icon: fa-github-alt
+  url: https://github.com/xq773939719
+
+# Whether to activate the Post TOC, and Configure which title types are supported by TOC support.
+# 是否激活文章 TOC 功能，并配置TOC支持选中哪些标题类型.
+toc:
+  enable: false
+  heading: h1, h2, h3, h4
+
+# 是否激活文章末尾的打赏功能，默认激活（你替换为的你自己的微信、支付宝二维码图片、或者使用网络图片也可以）.
+reward:
+  enable: true
+  title: 你的赏识是我前进的动力
+  wechat: /medias/reward/wechat-reward-image.jpeg
+  alipay: /medias/reward/alipay-reward-image.jpeg
+
+# profile in about page, including avatars, career, and personal introductions.
+# 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
+profile:
+  avatar: /medias/avatar.jpg
+  career: 软件开发
+  introduction: .软工渣.编程痴.开发宅.系统迷.强迫症.
+
+# config my projects informations in about page.
+# If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
+# 在“关于”页面配置"我的项目"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
+myProjects:
+  enable: false
+  data:
+    hexo-theme-matery:
+      icon: fa-meetup
+      iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
+      url: http://github.com/blinkfox/hexo-theme-matery
+      desc: This is a Hexo blog theme with 'Material Design' and responsive design.
+    zealt:
+        icon: fa-database
+        iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
+        url: https://github.com/blinkfox/zealot
+        desc: 一个轻量级的SQL和参数动态生成工具库
+    typora-vue-theme:
+        icon: fa-file-text-o
+        iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
+        url: https://github.com/blinkfox/typora-vue-theme
+        desc: This is a typora theme inspired by Vue document style.
+
+# config my skills informations in about page.
+# If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.
+# 在“关于”页面配置"我的技能"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
+mySkills:
+  enable: true
+  data:
+    C++:
+      background: 'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'
+      percent: 90%
+    Java:
+      background: 'linear-gradient(to right, #9900FF 0%, #CC66FF 100%)'
+      percent: 70%
+    Android:
+      background: 'linear-gradient(to right, #2196F3 0%, #42A5F5 100%)'
+      percent: 80%
+    iOS:
+      background: 'linear-gradient(to right, #FFEB3B 0%, #FFF176 100%)'
+      percent: 50%
+    算法:
+      background: 'linear-gradient(to right, #00BCD4 0%, #80DEEA 100%)'
+      percent: 75%
+    数据结构:
+      background: 'linear-gradient(to right, #4CAF50 0%, #81C784 100%)'
+      percent: 95%
+    Linux:
+      background: 'linear-gradient(to right, #FDED90 0%, #FDD83F 100%)'
+      percent: 80%
+    Mac:
+      background: 'linear-gradient(to right, #BE40C0 0%, #FD6BBC 100%)'
+      percent: 90%
+    HTML:
+      background: 'linear-gradient(to right, #6DC68B 0%, #82FD5F 100%)'
+      percent: 30%
+    JavaScript:
+      background: 'linear-gradient(to right, #8BA24E 0%, #FDEF96 100%)'
+      percent: 40%
+    CSS:
+      background: 'linear-gradient(to right, #AF413F 0%, #FD6062 100%)'
+      percent: 20%
+    软件工程:
+      background: 'linear-gradient(to right, #BE40C0 0%, #DC48FD 100%)'
+      percent: 60%
+
+# config gallery of my photos in about page.
+# If you don't want to display this `Gallery` content, you can deactivate or delete this configuration.
+# 在“关于”页面配置"我的相册"图片，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
+myGallery:
+  enable: true
+  data:
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/24.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/25.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/26.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/27.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/28.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/29.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/30.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/31.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/32.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/33.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/34.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/35.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/36.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/37.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/38.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/39.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/40.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/41.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/42.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/43.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/44.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/45.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/46.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/47.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/48.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/49.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/50.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/51.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/52.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/53.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/54.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/55.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/56.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/57.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/58.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/59.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/60.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/61.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/62.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/63.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/64.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/65.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/66.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/67.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/68.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/69.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/70.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/71.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/72.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/73.jpg
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/74.jpg
+myPicture:
+  enable: true
+  data:
+    - /medias/featureimages/1.png
+    - /medias/featureimages/2.png
+    - /medias/featureimages/3.png
+    - /medias/featureimages/4.png
+    - /medias/featureimages/5.png
+    - /medias/featureimages/6.png
+    - /medias/featureimages/7.png
+    - /medias/featureimages/8.png
+    - /medias/featureimages/9.png
+snapicture:
+  enable: false
+  data:
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/blog_images/README/0.png
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/blog_images/README/%201.png
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/blog_images/README/%202.png
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/blog_images/README/%203.png
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/blog_images/README/%204.png
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/blog_images/README/%205.png
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/blog_images/README/%206.png
+    - https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/blog_images/README/%207.png
+    
+# Whether to display post-calender in the `archive` page
+# 设置在归档页面中是否显示'文章日历'控件
+postCalendar: true
+
+# the Gitalk config，default disabled
+# Gitalk 评论模块的配置，默认为不激活
+gitalk:
+  enable: true
+  owner: xq773939719
+  repo: Gitalk
+  oauth:
+    clientId: 3881da8504cfa6858115
+    clientSecret: cdbe0f234bc6e628377445c81f24a87ab9663315
+  admin: xq773939719
+  perPage: 15 #每页多少个评论
+  pagerDirection: last #排序方式是从旧到新（first）还是从新到旧（last）
+  createIssueManually: true #如果当前页面没有相应的 isssue ，且登录的用户属于 admin，则会自动创建 issue。如果设置为 true，则显示一个初始化页面，创建 issue 需要点击 init 按钮。
+  distractionFreeMode: true #是否启用快捷键(cmd|ctrl + enter) 提交评论.
+  flipMoveOptions: {
+    staggerDelayBy: 150,
+    appearAnimation: 'accordionVertical',
+    enterAnimation: 'accordionVertical',
+    leaveAnimation: 'accordionVertical',
+  }
+
+
+
+
+# the Gitment config，default disabled
+# Gitment 评论模块的配置，默认为不激活
+gitment:
+  enable: false
+  owner:
+  repo:
+  oauth:
+    clientId:
+    clientSecret:
+
+# disqus config, default disabled
+# Disqus评论模块的配置，默认为不激活
+disqus:
+  enable: false
+  shortname:
+
+# Livere comment configuration, the default is not activated
+# Livere 来必力评论模块的配置，默认为不激活
+livere:
+  enable: false
+  uid: MTAyMC80MTEwMy8xNzYyOA==
+
+# Whether to display fork me on github icon and link, default true, You can change it to your repo address
+# 配置是否在 header 中显示 fork me on github 的图标，默认为true，你可以修改为你的仓库地址.
+githubLink:
+  enable: true
+  url: https://github.com/xq773939719
+  title: 查看
+
+# The post featured images that needs to be displayed when there is no image.
+# 无文章特色图片时需要显示的文章特色图片.
+featureImages: 
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/0.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/1.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/2.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/3.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/4.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/5.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/6.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/7.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/8.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/9.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/10.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/11.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/12.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/13.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/14.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/15.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/16.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/17.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/18.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/19.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/20.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/21.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/22.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/23.jpg
+
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/24.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/25.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/26.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/27.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/28.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/29.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/30.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/31.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/32.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/33.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/34.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/35.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/36.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/37.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/38.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/39.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/40.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/41.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/42.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/43.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/44.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/45.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/46.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/47.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/48.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/49.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/50.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/51.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/52.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/53.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/54.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/55.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/56.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/57.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/58.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/59.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/60.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/61.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/62.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/63.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/64.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/65.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/66.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/67.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/68.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/69.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/70.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/71.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/72.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/73.jpg
+- https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/74.jpg
+
+
+links_title: 推荐
+links: 
+  Github推荐: https://github.com/CyC2018/CS-Notes
+  NexT: http://theme-next.iissnan.com/
+  Gitbook: https://gitbook.cn/
+  Swift: https://qunwang6.github.io/blog/SwiftGuide/
+  MacTools: http://wangchujiang.com/awesome-mac/index.zh.html
+  马克飞象: https://maxiang.io/
+  创造狮: http://chuangzaoshi.com/
+  稀土区: https://xituqu.com/
+  奇点日报: http://www.qidianlife.com/ 
+  菜鸟教程: http://www.runoob.com/
+  易百教程: https://www.yiibai.com/
+  #自由出入: https://www.namaho.org/
+  推荐vps: http://www.vultr.com/?ref=7598368
+
+
+
+social:
+  Github: https://github.com/xq773939719 || github
+  BiliBili: https://space.bilibili.com/7076447/#/ || play
+  简书: https://www.jianshu.com/u/3d7dfd3e540f || sign-language
+  知乎: https://www.zhihu.com/people/xu-qiang-69-64/activities || space-shuttle
+
+auto_excerpt:
+  enable: false
+  length: 150
+post_wordcount:
+  item_text: true
+  wordcount: true
+  min2read: true
+
+leancloud_visitors:
+  enable: true
+  app_id: YWoGmJBtL0H01NObzadIB8dd-gzGzoHsz #<app_id>
+  app_key: NhB5UIfHaVr6nBpuiRAz3t1E #<app_key>
+  security: true
+  betterPerformance: true
+
+
+
+verifyPassword:
+   enable: false
+   promptMessage: 请输入访问本文章的密码
+   errorMessage: 密码错误，将返回主页！
+mathjax:
+   enable: true
+   cdn: https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+googleAnalytics:
+    enable: false
+    id: UA-130854246-1

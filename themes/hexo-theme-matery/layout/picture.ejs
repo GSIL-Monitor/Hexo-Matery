@@ -1,0 +1,41 @@
+<style type="text/css">
+    /* don't remove. */
+
+    .about-cover {
+        height: 75vh;
+    }
+</style>
+
+<%- partial('_partial/bg-cover') %>
+
+<main class="content">
+    <div id="aboutme" class="container about-container">  
+        <div class="card">
+            <div class="card-content">              
+                <% if (theme.myGallery && theme.myGallery.enable) { %>
+                <%- partial('_widget/my-picture') %>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</main>
+<% if (page.total > 1) { %>
+<%- partial('_partial/paging') %>
+<% } %>
+
+
+<% if (theme.gitalk && theme.gitalk.enable) { %>
+<%- partial('_partial/gitalk') %>
+<% } %>
+
+<% if (theme.gitment.enable) { %>
+<%- partial('_partial/gitment') %>
+<% } %>
+
+<% if (theme.disqus.enable) { %>
+<%- partial('_partial/disqus') %>
+<% } %>
+
+<% if (theme.livere && theme.livere.enable) { %>
+<%- partial('_partial/livere') %>
+<% } %>

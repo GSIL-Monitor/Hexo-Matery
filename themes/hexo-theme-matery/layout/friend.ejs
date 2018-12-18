@@ -1,0 +1,140 @@
+<style type="text/css">
+    /* don't remove. */
+
+    .index-cover {
+        height: 100vh;
+    }
+</style>
+
+<%- partial('_partial/bg-cover') %>
+<div>
+    <main class="content">
+
+        <% if (theme.dream.enable) { %>
+        <div class="container notice">
+            <div class="card">
+                <div class="card-content">
+                    <i class="fa fa-volume-up fa-lg fa-fw text-color"></i>
+                    <%= theme.dream.text %>
+                </div>
+            </div>
+        </div>
+        <% } %>
+
+        <div id="recommend-sections">
+            <% if (page.current === 1) { %>
+            <%- partial('_widget/recommend') %>
+            <% } %>
+        </div>
+
+        <%
+            var hashCode = function (str) {
+                if (!str && str.length === 0) {
+                    return 0;
+                }
+
+                var hash = 0;
+                for (var i = 0, len = str.length; i < len; i++) {
+                    hash = ((hash << 5) - hash) + str.charCodeAt(i);
+                    hash |= 0;
+                }
+                return hash;
+            };
+        %>
+
+        <%
+            var friend = [  
+
+                            ["の大帅哥吧","https://mq100.top/","Ctrl C，Ctrl V真好用","邓详明","46.jpg"],
+                            ["のFinen","https://www.finen.top/","Stay Hungry! Stay Foolish!","Finen","42.jpg"],
+                            ["の董沅鑫","https://godbmw.com/","深圳大学 学业繁重的计算机科学和数学双专业 的大三生，偶尔通过写博客来放松自己，认识些有趣的人。","董沅鑫","65.jpg"],
+                            ["のLucas","https://lucaschangcoding.github.io","(●—●)大白","常承启","72.jpg"],
+                            ["のCrazyCodes","https://blog.fastrun.cn/","PHP/GO开发，架构师","PHP+Go","74.jpg"],
+                            ["のDongSheng's Blog","http://www.mdslq.cn","个人技术、职场成长分享","全栈","66.jpg"],
+                            ["のBob","https://www.bobcoder.cc/","Bob的博客是一个技术分享的博客,提供博主在学习成果和工作中经验的总结。","Bob","22.jpg"],
+                            ["隔壁老王的随笔","https://dojay.cn","一枚喜欢撸猫的web前端开发","前端","57.jpg"],
+                            
+                            ["のchan-shaw","https://chan-shaw.github.io/","言念君子，温其如玉","肖郴","45.jpg"],
+                            ["の尘烨小斋","http://www.chenye27.xyz/","以清净心看世界，以欢喜心过生活","包顺","28.jpg"],
+                            ];
+
+            var none = [
+                            ["のWind","https://www.windsings.com/","向死而生","李博强","36.jpg"],
+                            ["のdicey","http://dicey.cc/","早睡早起!不要熬夜!","戴赛","48.jpg"],
+                            ["のTotoro","https://brucexiaj.github.io/","Welcome (ಡωಡ) !","夏军","53.jpg"],
+                            ["のDowonders'blog","http://lhhxy.cn/","不甘心只做一个coder，记录感情生活学习工作的地方～","李雪宇","61.jpg"],
+                            ["のFrozenMap","https://jjayyyyyyy.github.io/","Where something interesting happens 🏀","楼基颉","71.jpg"],
+                            ["の从嘉の小站","http://cjcongjia.cn/","自豪地采用WordPress","曹婧","64.jpg"],
+                            ["の码酱","http://luokangyuan.com/","努力做有价值的技术文章","前端","25.jpg"],
+                            ];
+        %>
+        <!-- 所有文章卡片 -->
+        <article id="articles" class="container articles">
+            <div class="row article-row">
+                <% friend.forEach( friend => { %>
+                <div class="article col s12 m6 l4" data-aos="fade-up" data-aos-duration="200">
+
+
+                    <div class="card">
+                        <a href="<%- friend[1] %>" target="_blank">
+                            <div class="card-image">
+                                <img src="<%- 'https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/'+friend[4] %>"
+                                    class="responsive-img">
+                                <span class="card-title">
+                                    <%- friend[0] %>
+                                </span>
+                            </div>
+                        </a>
+
+                        <div class="card-content article-content">
+                            <!---->
+                            <div class="summary">
+                                <%- friend[2] %>
+                            </div>
+                        </div>
+
+                        <div class="card-action article-tags">
+                            <span class="chip bg-color">
+                                <%= friend[3] %>
+                            </span>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <% });%>
+
+
+
+
+
+
+
+            </div>
+        </article>
+    
+    </main>
+    <% if (page.total > 1) { %>
+    <%- partial('_partial/paging') %>
+    <% } %>
+
+
+    <% if (theme.gitalk && theme.gitalk.enable) { %>
+    <%- partial('_partial/gitalk') %>
+    <% } %>
+
+    <% if (theme.gitment.enable) { %>
+    <%- partial('_partial/gitment') %>
+    <% } %>
+
+    <% if (theme.disqus.enable) { %>
+    <%- partial('_partial/disqus') %>
+    <% } %>
+
+    <% if (theme.livere && theme.livere.enable) { %>
+    <%- partial('_partial/livere') %>
+    <% } %>
+    
+</div>

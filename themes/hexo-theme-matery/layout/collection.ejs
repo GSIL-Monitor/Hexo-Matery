@@ -1,0 +1,236 @@
+<style type="text/css">
+    /* don't remove. */
+
+    .index-cover {
+        height: 100vh;
+    }
+</style>
+<%- partial('_partial/bg-cover') %>
+<div>
+    <main class="content">
+        <% if (theme.dream.enable) {
+    %>
+        <div class="container notice">
+            <div class="card">
+                <div class="card-content"><i class="fa fa-volume-up fa-lg fa-fw text-color"></i>
+                    <%=theme.dream.text %>
+                </div>
+            </div>
+        </div>
+        <%
+}
+
+%>
+        <div id="recommend-sections">
+            <% if (page.current===1) {
+    %>
+            <%- partial('_widget/recommend') %>
+            <%
+}
+
+%>
+        </div>
+        <% var hashCode=function (str) {
+    if (!str && str.length===0) {
+        return 0;
+    }
+    var hash=0;
+    for (var i=0, len=str.length;
+    i < len;
+    i++) {
+        hash=((hash << 5) - hash)+str.charCodeAt(i);
+        hash |=0;
+    }
+    return hash;
+}
+
+;
+%>
+        <%
+            var collection = [  
+    ["腾讯云开发者平台","https://dev.tencent.com/","腾讯云+Coding","Git","7.jpg"],  
+    ["CocoaChina","http://www.cocoachina.com/","CocoaChina","社区","3.jpg"], 
+    ["AnyCodes","http://www.anycodes.cn/zh/","在线编程","编程","1.jpg"],        
+    ["最全前端教程合集","https://www.qqstop.cn/archives/15.html","最全前端教程合集","教程","31.jpg"],
+    ["Python 资源大全中文版","https://zhang18.top/program/72/","Python 资源大全中文版","教程","12.jpg"],
+
+    ["安逸导航","https://anyi.life/","安逸导航","导航","32.jpg"],
+    ["探索","https://go.anyi.life/","探索","导航","33.jpg"],
+    ["前端氪","https://csskr.com/","前端氪","导航","34.jpg"],
+    ["龙喵网","http://ailongmiao.com/","龙喵网","导航","35.jpg"],
+
+    ["CS-Notes","https://github.com/CyC2018/CS-Notes","CS-Notes","Github","36.jpg"],
+    ["GitHub热门","http://github.dashgame.com/","GitHub热门","Github","37.jpg"],
+    ["独立","https://josephchang10.github.io/chinese-indie-hackers/","独立","Github","38.jpg"],
+    ["Gitbook-题解","https://algorithm.yuanbin.me/zh-hans/","Gitbook-题解","Github","39.jpg"],
+    ["柳婼-题解","https://github.com/liuchuo","柳婼-题解","Github","40.jpg"],
+    ["awangdev-题解","https://github.com/awangdev","awangdev-题解","Github","64.jpg"],
+    ["RealHacker-题解","https://github.com/RealHacker","RealHacker-题解","Github","65.jpg"],
+    ["interviews-cn","https://github.com/kdn251","interviews-cn","Github","66.jpg"], 
+    ["stormzhang","https://github.com/stormzhang","stormzhang","Github","67.jpg"],
+    ["中文 iOS/Mac 开发博客列表","https://github.com/tangqiaoboy/iOSBlogCN","中文 iOS/Mac 开发博客列表","Github","68.jpg"],
+
+    ["cocoaz","https://www.cocoaz.com/","cocoaz","社区","41.jpg"],
+    ["segmentfault","https://segmentfault.com/","segmentfault","社区","42.jpg"],
+    ["领扣","https://leetcode-cn.com/","LeetCode中文版","社区","43.jpg"],
+    ["LintCode","https://www.lintcode.com/","lintcode","社区","44.jpg"],
+    ["visualgo","https://visualgo.net/zh","visualgo","社区","45.jpg"],
+    ["牛客","https://www.nowcoder.com/8278190","牛客网，程序员必备求职神器","社区","46.jpg"],
+    ["PAT","https://pintia.cn/problem-sets","PAT","社区","47.jpg"],
+    ["hihocoder","http://hihocoder.com/","hihocoder","社区","48.jpg"],
+    ["前端GitBook","https://legacy.gitbook.com/@leohxj","前端GitBook","教程","58.jpg"],
+    ["易百教程","https://www.yiibai.com/","易百教程","教程","49.jpg"],
+    ["菜鸟教程","http://www.runoob.com/","菜鸟教程","教程","50.jpg"],
+    ["w3cschool","https://www.w3cschool.cn/tutorial","w3cschool","教程","51.jpg"],
+    ["cocoachina","http://www.cocoachina.com/","cocoachina","社区","52.jpg"],
+    ["创造狮","http://chuangzaoshi.com/","创造狮","社区","62.jpg"],
+    ["稀土区","https://xituqu.com/","稀土区","社区","44.jpg"],
+    ["Vultr","http://www.vultr.com/?ref=7598368","Vultr","VPS","41.jpg"],
+    ["奇点日报","http://www.qidianlife.com/","奇点日报","社区","46.jpg"],
+
+    
+    ["Leo Hui","http://finalhome.org/","我不优秀,但是我会以优秀的标准来要求自己。","前端","72.jpg"],
+    ["邱俊涛","http://icodeit.org/","前端书籍作者","互联网","53.jpg"],
+    ["廖雪峰","https://www.liaoxuefeng.com/","廖雪峰","互联网","54.jpg"],
+    ["萧井陌","https://www.zhihu.com/people/xiao-jing-mo/activities","萧井陌","互联网","55.jpg"],
+    ["冷星","https://lengxing.club/","天道酬勤","前端","56.jpg"],
+    ["小甲鱼","https://ilovefishc.com/","小甲鱼","全栈","58.jpg"],
+    ["Barnes前端Web","https://kinegratii.github.io/","Web开发 / 数据分析 / APP混合开发","前端","59.jpg"],
+    ["Fly 2 The Dream","https://www.f2td.com/","我的职业是web前端开发工程师 性别女，90后，家乡陕西，现居上海 喜欢看推理小说，爱好设计、养宠物、看影视剧、听音乐偶尔折腾一些有意思的事情，比如拼图、模型等","前端","53.jpg"],
+    ["王恒","https://blog.adymilk.cn/","三步枫的个人网站","前端","60.jpg"],
+    ["七年","https://www.supert.net.cn/","喜欢简约和一切美好的事物！","前端","62.jpg"],
+    ["ahaochan","https://ahaochan.github.io/","Java Web 程序员","前端","46.jpg"],
+    ["Swhite ★ Notes","https://www.baixiaojian.com/","星火燎原","后端","47.jpg"],
+    ["猪猪侠","https://www.ofind.cn/","一枚程序猿","后端","54.jpg"],
+    ["Doublemine","https://notes.doublemine.me/","You got a dream, you gotta protect it. People can’t do something themselves,they wanna tell you you can’t do it.If you want something, go get it. Period.","后端","55.jpg"],
+
+    ["陈明标","http://billchan.me/","目前是 SwiftGG 翻译组 活跃成员。曾被招募为 美图公司 · 基础组件架构 iOS工程师、机智云 · 平台事业部 iOS SDK 研发工程师。现为 腾讯 · 企鹅电竞 iOS工程师。","iOS","60.jpg"],
+    ["saitjr","http://www.saitjr.com/","很久很久以前，这是一个正经的技术博客，直到有一天，因为太懒不想开新博客，所以开始更新一些乱七八糟的东西，将就一下吧","iOS","61.jpg"],
+    ["时光倒流二十年","http://qiuchengjia.cn/","博客主要记录我在学习过程中的心得，生活中的点滴吧.主要内容是关于算法，Android开发，Java，ACM竞赛，C，C++，Linux，web，PHP等.","后端","62.jpg"],
+    ["iHTCboy","https://ihtcboy.com/","热爱移动开发，目前致力研究移动全栈","iOS","63.jpg"],
+    ["Slark","https://slarker.me/","应用推荐","iOS","41.jpg"],
+    ["sunnyyoung","https://blog.sunnyyoung.net/","iOS/macOS 开发者、开源爱好者、业余逆向开发，正在学习前/后端开发，走往全栈目标的路上。","iOS+macOS","42.jpg"],
+    ["DongSheng's Blog","http://www.mdslq.cn","个人技术、职场成长分享","全栈","43.jpg"],
+    ["赵俊","http://www.zhaojun.im/","一枚 Java 开发，努力学习中，博客文章多以笔记类型为主，为了方便以后查阅，希望这些文章可以帮助到更多的 Java 学习者。","Java","44.jpg"],
+    ["RYANoUP","https://ryanc.cc/","一个完美主义者，名曰RYAN0UP。","Java","45.jpg"],
+    ["闪烁之狐","https://blinkfox.github.io/","从来没有真正的绝境，只有心灵的迷途","Java","52.jpg"],
+    ["hohode","http://www.hohode.com/","子非吾之所有，虽一毫而莫取。惟江上之清风，与山间之明月，耳得之而为声，目遇之而成色，取之无禁，用之不竭。","Java","48.jpg"],
+    ["吴迪","https://www.viseator.com/","今日头条 效率工程 安卓开发实习生","Android","49.jpg"],
+    ["Jerry","https://jerryc.me/","Never put off till tomorrow what you can do today.","Android","50.jpg"],
+    ["寒江蓑笠","http://www.heqiangfly.com/","一名Android开发工程师，平时喜欢逛逛技术论坛，看看技术博客，研究一些新技术。","Android","51.jpg"],
+    ["周沫凡","https://morvanzhou.github.io","莫烦Python","Python","52.jpg"],
+    ["小歪","https://zhangslob.github.io/","网络爬虫、数据分析、大数据!","Python","53.jpg"],
+    ["柳婼","https://www.liuchuo.net/","本萌喵是一枚计算机系大四在校生～～（虽然浙大计算机群和PAT算法讨论群里很多人叫我“柳神”哈哈哈）","后端","56.jpg"],
+    ["孙权","https://www.sundabao.com/","软件工程","PHP","57.jpg"],
+    ["Netcan_Space","http://www.netcan666.com/","Netcan现就读于14级合肥工业大学宣城校区计科专业（现大四），签约于上海华为研究所。为幸福美好的生活而努力着。","全栈","58.jpg"],
+    ["CrazyCodes","https://blog.fastrun.cn/","PHP/GO开发，架构师","PHP+Go","59.jpg"],
+    ["TankyWoo","http://www.wutianqi.com/","Ops-Dev (Python Dev & Linux SA)","全栈","60.jpg"],
+
+    ["算法","https://ita.skanev.com/index.html","算法","算法","61.jpg"],
+    ["算法","https://web.stanford.edu/class/cs97si/","算法","算法","62.jpg"],
+    ["算法","https://walkccc.github.io/CLRS/","算法","算法","63.jpg"],
+    ["李瑞豪","https://lruihao.cn/","每天早晨叫醒你的不是闹钟, 而是你的梦想。","ACM","41.jpg"],
+    ["王立杰","http://wangwlj.com/","硕士/东南大学/信息与通信工程","题解","42.jpg"],
+    ["谭升的博客","https://face2ai.com/","我是Tony，人工智能爱好者，一直从事相关行业，爱写点博客，原因是当年最落魄，最无奈的时候，靠着看书和写博客不断进步，正确的认识了自己，也走出了困境，所以觉得写博客是个好习惯，即帮助别人，也能帮助自己。","AI","43.jpg"],
+
+    ["栋哥的博客","https://liuyandong.com/","立志有生之年做出世界上第一台纵享丝滑的超量子计算机，成为中国少有的，获得世界认可的，纯粹的，脱离了低级趣味的，真正的院士，为国争光!","随笔","44.jpg"],
+    ["王垠","http://www.yinwang.org/#","清华主动退学","随笔","45.jpg"],
+    ["bigfa","https://fatesinger.com/","去过所有省份。","随笔","46.jpg"],
+    ["屠夫9441的博客","https://www.haomwei.com/","随笔","随笔","47.jpg"],
+    ["素生","http://z.arlmy.me/","生而减熵 渴望生活","随笔","48.jpg"],
+    ["梦想博客","http://www.myloveru.cn/","女孩子 啊呸漂亮女孩子 御姐什么的最棒了，忠于短发，死于短发，对短发的小姐姐离不开眼神。","随笔","49.jpg"],
+    ["yufan's blog","https://yufanboke.top/","分享记录生活","随笔","51.jpg"],
+
+    ["Rinvay","https://www.rinvay.cc/","博客很漂亮","随笔","57.jpg"],
+    ["OceanicKang","https://www.oceanickang.com/","热爱。。。貌似并无可热爱的东西，唯一的只有 —— 宅！","分享","21.jpg"],
+
+
+    ["岁寒松柏","https://www.rocky.hk/","记录Rocky的技术杂文","随笔","54.jpg"],
+    ["肥鱼Blog","https://www.feiyuyu.net/","菜死了菜死了","极客","55.jpg"],
+    ["黑鸟博客","https://guihet.com/","记录折腾的碎叶","极客","56.jpg"],
+    ["ZLOE","https://zhang18.top/","ZLOE","极客","57.jpg"],
+    ["清秋暖冬-Blog","https://www.qinkei.com/","清秋暖冬-Blog","极客","58.jpg"],
+    ["Spencer Woo","https://spencerwoo.com/about/","少数派 Matrix 专栏作者","极客","65.jpg"],
+    
+    ["离别歌","https://www.leavesongs.com/#","前乌云网核心白帽子、混迹于各大社区的伪装程序猿，喜欢各种代码与审计、linux运维与内网、python web开发。","安全","59.jpg"],
+    
+    ["不死鸟","https://lai.yuweining.cn/","分享为王","分享","49.jpg"],
+    ["Kevan","https://www.qqstop.cn/","用欣赏的眼光去看待别人，用感恩的情怀去体验生活。","分享","50.jpg"],
+    ["ZLOE","https://zhang18.top/","ZLOE","分享","45.jpg"],
+    ["教书先生","https://blog.oioweb.cn/","个人生活爱好折腾笔记！","分享","32.jpg"],
+    ["趣极客","https://qugeek.com","追随极客精神的个人","分享","21.jpg"],
+    ["Mathor's blog","https://www.wmathor.com/","说命途多舛的都是无稽之谈 他不止一刻的贪婪","分享","66.jpg"],
+    ["冰雪林","https://www.xinxuan.me","我只知道我很萌的，你要不要摸摸我。","分享","20.jpg"],
+
+    ["精品Mac软件","http://wangchujiang.com/awesome-mac/index.zh.html","收集各种类别非常好用的 Mac 应用程序、软件以及工具","工具","61.jpg"],
+    ["知您网","https://www.zhinin.com/","Mac 应用程序、软件以及工具","工具","62.jpg"],
+    ["精品Windows软件","https://github.com/Awesome-Windows/Awesome/blob/master/README-cn.md","收集各种类别非常好用的 Windows 应用程序、软件以及工具","工具","63.jpg"],
+    ["马克菠萝","http://www.macbl.com/","分享你喜欢的Mac应用","工具","52.jpg"],
+    ["精品MAC应用分享","http://xclient.info/?t=22dcd3c249bc291a24ef20acc97a97f9947a0846","精品MAC应用分享","工具","54.jpg"],
+    ["爱情守望者","https://www.waitsun.com/","分享Mac应用","工具","55.jpg"],
+    ["osxwin","http://www.osxwin.com/","osxwin","工具","56.jpg"],
+    ["盒子部落","https://hezibuluo.com/","盒子部落","工具","57.jpg"],
+    ["软矿","https://www.rkdot.com/","软矿","工具","58.jpg"],
+    ["异次元","https://www.iplaysoft.com/","异次元软件世界","工具","59.jpg"],
+    
+
+
+
+];
+
+        %>
+
+        <!-- 所有文章卡片 -->
+        <article id="articles" class="container articles">
+            <div class="row article-row">
+                <% collection.forEach( collection=> {
+     %>
+                <div class="article col s12 m6 l4" data-aos="fade-up" data-aos-duration="200">
+                    <div class="card"> <a href="<%- collection[1] %>" target="_blank">
+                            <div class="card-image"> <img src="<%- 'https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/medias/featureimages/'+collection[4] %>"
+                                    class="responsive-img">
+                                <span class="card-title">
+                                    <%- collection[0] %> </span> </div>
+                        </a>
+                        <div class="card-content article-content">
+                            <!---->
+                            <div class="summary">
+                                <%- collection[2] %>
+                            </div>
+                        </div>
+                        <div class="card-action article-tags"> <span class="chip bg-color">
+                                <%=collection[3] %> </span> </div>
+                    </div>
+                </div>
+                <%
+ }
+
+ );
+ %>
+            </div>
+        </article>
+
+
+
+    </main>
+    <% if (page.total > 1) { %>
+    <%- partial('_partial/paging') %>
+    <% } %>
+
+
+    <% if (theme.gitalk && theme.gitalk.enable) { %>
+    <%- partial('_partial/gitalk') %>
+    <% } %>
+
+    <% if (theme.gitment.enable) { %>
+    <%- partial('_partial/gitment') %>
+    <% } %>
+
+    <% if (theme.disqus.enable) { %>
+    <%- partial('_partial/disqus') %>
+    <% } %>
+
+    <% if (theme.livere && theme.livere.enable) { %>
+    <%- partial('_partial/livere') %>
+    <% } %>
+</div>
