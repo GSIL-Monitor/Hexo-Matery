@@ -3,35 +3,38 @@
 
 /*小屏幕下(手机类)的样式*/
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 550px) {
     .container {
-        width: 95%;
+        width: 90%;
     }
 }
 
 
 /*中等屏幕下(平板类)的样式*/
 
-@media only screen and (min-width: 600px) and (max-width: 1359px) {
+@media only screen and (min-width: 550px) and (max-width: 1000px) {
     .container {
         width: 90%;
         /*max-width: 1000px;*/
     }
+    
 }
 
 
 /*大屏幕下(桌面类)的样式*/
 
-@media only screen and (min-width: 1360px) {
+@media only screen and (min-width: 1000px) {
+    
     .container {
         width: 85%;
-        max-width: 1125px;
+        max-width: 1200px;
     }
     .post-container {
         width: 90%;
         margin: 0 auto;
         max-width: 1250px;
     }
+
 }
 
 body {
@@ -190,6 +193,8 @@ mark {
     header .brand-logo .logo-span {
         font-size: 1.6rem !important;
     }
+    
+
 }
 
 .progress-bar {

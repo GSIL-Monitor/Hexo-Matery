@@ -1,5 +1,5 @@
 ---
-title: 收藏
+title: 推荐
 
 copyright: true
 comments: true

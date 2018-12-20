@@ -13,12 +13,15 @@ menu:
   日志:
     url: /archives
     icon: fa-archive
-  其他:
+  图片:
     url: /picture
     icon: fa-image
-  收藏:
+  推荐:
     url: /collection
-    icon: fa-slack
+    icon: fa-thumbs-up #fa-slack
+  #推荐:
+    #url: /recommend
+    #icon: fa-thumbs-up
   友链:
     url: /friend
     icon: fa-address-book
