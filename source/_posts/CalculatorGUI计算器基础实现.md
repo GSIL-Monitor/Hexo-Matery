@@ -7,7 +7,7 @@ comments: true
 top: false
 author: XQ
 mathjax: false
-date: 2018-12-12 23:56:25
+date: 2018-12-21 10:00:25
 updated: 2018-12-20 23:03:25
 keywords: iOS,移动开发,Objective-C
 description: iOS应用开发入门，持续更新，教训——慎重命名
@@ -508,6 +508,8 @@ NS_ASSUME_NONNULL_END
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.cal = [[Calculator alloc]init];
+    self.advise_428.enabled = NO;
+    self.score_428.enabled = NO;
     // Do any additional setup after loading the view.
 }
 
@@ -985,7 +987,7 @@ NS_ASSUME_NONNULL_END
 - (IBAction)delete:(UIButton *)sender {
     [self.advanceCalculator deleteNumber];
     
-     self.TextField.text = self.advanceCalculator.screen;
+     self.TextField.text = self.advanceCalculator.string;
     //[self.advanceCalculator deleteNumber];
 }
 
