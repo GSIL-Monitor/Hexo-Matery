@@ -13,9 +13,9 @@ menu:
   日志:
     url: /archives
     icon: fa-archive
-  图片:
-    url: /picture
-    icon: fa-image
+  #图片:
+    #url: /picture
+    #icon: fa-image
   推荐:
     url: /collection
     icon: fa-thumbs-up #fa-slack
