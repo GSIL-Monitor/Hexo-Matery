@@ -101,9 +101,9 @@ deploy:
   type: git
   repo:
     github: git@github.com:xq773939719/xq773939719.github.io.git,master
-    coding: git@git.dev.tencent.com:xq773939719/xq773939719.coding.me.git,master
+    #coding: git@git.dev.tencent.com:xq773939719/xq773939719.coding.me.git,master
     #gitlab: git@gitlab.com:xq773939719/xq773939719.gitlab.io.git,master
-    bitbucket: git@bitbucket.org:xq773939719/xq773939719.bitbucket.io.git,master
+    #bitbucket: git@bitbucket.org:xq773939719/xq773939719.bitbucket.io.git,master
     #vultr: git@202.182.116.253:/home/git/hexo.git,master
   #branch: master
 
